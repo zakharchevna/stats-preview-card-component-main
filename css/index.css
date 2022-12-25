@@ -33,22 +33,16 @@ body {
 }
 
 .stats-card-component__img {
-   position: relative;
-}
-
-.stats-card-component__img::after {
-   content: "";
-   background-color: hsla(277, 62%, 30%, 0.582);
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
+   background-color: hsla(277, 52%, 57%, 0.574);
+   border-radius: 10px 10px 0 0;
 }
 
 .stats-card-component__img img{
    max-width: 100%;
-   border-radius: 10px 10px 0 0;
+   height: 100%;
+   mix-blend-mode: multiply;
+   object-fit: cover;
+   opacity: 0.8;
 }
 
 .content-stats-card-component {
@@ -99,7 +93,7 @@ body {
    .stats-card-component {
       flex-direction: row-reverse;
    }
-   .stats-card-component__img img {
+   .stats-card-component__img {
       border-radius: 0 10px 10px 0;
    }
    .content-stats-card-component {
